@@ -48,7 +48,15 @@ public class GroupHelper {
         GroupHelper.wd.findElement(By.name("delete")).click();
     }
 
-    protected void selectGroup() {
+    public void selectGroup() {
         GroupHelper.wd.findElement(By.name("selected[]")).click();
+    }
+
+    public void initGroupModification() {
+        GroupHelper.wd.findElement(By.name("edit")).click();
+    }
+
+    public void submitGroupModification() {
+        GroupHelper.wd.findElement(By.name("update")).click();
     }
 }
