@@ -12,7 +12,7 @@ public class TestGroupCreation extends TastBase {
     app.getGroupHelper().fillGroupForm(new GroupData("TestGroup3", "Test", "Test"));
     app.getGroupHelper().sabmitGroupCreation();
     app.getNavigationHelper().goToGroup();
-    app.getGroupHelper().reternToGroupPage();
+    app.getGroupHelper().returnToGroupPage();
   }
 
 }

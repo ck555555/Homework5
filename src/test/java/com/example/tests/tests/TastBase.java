@@ -7,13 +7,14 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.BrowserType;
 
 import static com.example.tests.appmanager.AplicationManager.wd;
 
 public class TastBase {
 
     protected static WebDriver wd;
-    protected final AplicationManager app = new AplicationManager();
+    protected final AplicationManager app = new AplicationManager(BrowserType.CHROME);
 
     @BeforeClass
     public static void setUp() throws Exception {

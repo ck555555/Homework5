@@ -18,8 +18,13 @@ public class UserCreateHelper {
 
     }
 
+    public static void saveInfoUser() {
+        wd.findElement(By.name("submit")).click();
 
-        public void createUserFields(UserFields userFields) {
+    }
+
+
+    public void createUserFields(UserFields userFields) {
             wd.findElement(By.xpath("//a[text()='add new']")).click();
             wd.findElement(By.name("firstname")).click();
             wd.findElement(By.name("firstname")).clear();
@@ -56,5 +61,9 @@ public class UserCreateHelper {
             wd.findElement(By.name("fax")).clear();
             wd.findElement(By.name("fax")).sendKeys(userFields.getFax());
         }
+
+    public void goToNewUser() {
+        wd.findElement(By.xpath("//a[text()='add new']")).click();
     }
+}
 
